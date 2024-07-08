@@ -20,7 +20,7 @@ describe('US-012- Funcionalidade: Cadastro de membros', () => {
   
 
   it('Validar nome em branco', () => {
-    cy.minhaFuncao('', sobrenomeAleatorio, emailAleatorio, '9988776655', 'Senha@12345')
+    cy.preencherCadastro('', sobrenomeAleatorio, emailAleatorio, '9988776655', 'Senha@12345')
     cy.get('#signup-response').should('contain', 'Nome não pode estar vazio')
   })
 
@@ -30,13 +30,13 @@ describe('US-012- Funcionalidade: Cadastro de membros', () => {
   })
 
   it('Validar sobrenome em branco', () => {
-    cy.preencherCadastro(nomeAleatorio, ' ', emailAleatorio, '9988776655', 'Senha@12345')
+    cy.preencherCadastro(nomeAleatorio, '', emailAleatorio, '9988776655', 'Senha@12345')
     cy.get('#signup-response').should('contain', 'Sobrenome não pode estar vazio')
   })
 
   it('Validar sobrenome invalido', () => {
     cy.preencherCadastro(nomeAleatorio, 'Teste20', emailAleatorio, '9988776655', 'Senha@12345')
-    cy.get('#signup-response').should('contain', 'Nome deve conter apenas caracteres alfabéticos,')
+    cy.get('#signup-response').should('contain', 'Sobrenome deve conter apenas caracteres alfabéticos,')
   })
 
   it('Validar email duplicado', () => {
