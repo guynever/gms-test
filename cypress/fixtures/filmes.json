@@ -1,0 +1,17 @@
+[
+    {
+        "titulo" : "The Lion King",
+        "ano" : 2000,
+        "decricao": "The Lion King é um filme infantil"
+    },
+    {
+        "titulo" : "The Godfather",
+        "ano" : 1870,
+        "decricao": "The Godfather é um filme de mafia italiana"
+    },
+    {
+        "titulo" : "Harry Potter",
+        "ano" : 1991,
+        "decricao": "Harry Potter é um filme de mágia"
+    }
+]
