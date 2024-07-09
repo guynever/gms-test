@@ -12,12 +12,15 @@ describe('US-012- Funcionalidade: Cadastro de membros', () => {
     const emailAleatorio = faker.internet.email();
 
   });
+  afterEach(() => {
+    cy.screenshot()
+  });
 
   it('Deve fazer o cadastro de campos obrigatorios', () => {
     cy.preencherCadastro(nomeAleatorio, sobrenomeAleatorio, emailAleatorio, '9988776655', 'Senha@12345')
     cy.get('#signup-response').should('contain', 'Cadastro realizado com sucesso!')
   })
-  
+
 
   it('Validar nome em branco', () => {
     cy.preencherCadastro('', sobrenomeAleatorio, emailAleatorio, '9988776655', 'Senha@12345')
