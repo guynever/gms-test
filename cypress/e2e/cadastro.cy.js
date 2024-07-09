@@ -1,8 +1,6 @@
 /// <reference types="cypress"/>
 import faker from 'faker';
 
-
-
 describe('US-012- Funcionalidade: Cadastro de membros', () => {
   const nomeAleatorio = faker.name.firstName();
   const emailAleatorio = faker.internet.email();
@@ -60,5 +58,10 @@ describe('US-012- Funcionalidade: Cadastro de membros', () => {
   it('Validar telefone invalido', () => {
     cy.preencherCadastro(nomeAleatorio, sobrenomeAleatorio, emailAleatorio, 'aabbccddee', 'Senha@12345')
     cy.get('#signup-response').should('contain', 'Telefone deve conter apenas números')
+  })
+
+  it('Validar Política de Privacidade', () => {
+    cy.get('a').should('be.visible')
+    cy.get('a').should('contain', 'Política de Privacidade')
   })
 })
