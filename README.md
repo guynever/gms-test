@@ -1,1 +1,3 @@
 # gms-test
+
+Gostaria de compartilhar uma experiência enriquecedora que tive na Jornada QA promovida pela EBAC - Escola Britânica de Artes Criativas e Tecnologia. Durante 7 dias intensos, mergulhei em aprendizados e desafios que me fizeram sentir parte de uma equipe com responsabilidades e metas a cumprir. Essa vivência foi essencial para meu crescimento profissional. Expresso minha gratidão à EBAC por proporcionar essa imersão no mundo de QA e ao professor Fábio Araújo por compartilhar seu conhecimento e disponibilidade para esclarecimento de dúvidas. Estou grata por essa oportunidade e entusiasmada para aplicar todo o aprendizado adquirido.
